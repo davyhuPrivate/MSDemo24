@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ms_img_login"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ms_edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:text="1003"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="24sp"
+            app:met_baseColor="@color/colorWhite"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="@color/colorWhite"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ms_edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="1234"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="24sp"
+            app:met_baseColor="@color/colorWhite"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="@color/colorWhite"
+            app:met_singleLineEllipsis="true" />
+
+        <Button
+            android:id="@+id/ms_fbtn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="88dp"
+            android:alpha="0.9"
+            android:background="@color/colorJmOrange"
+            android:shadowColor="@color/colorBlack"
+            android:text="Sign In"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ms_txt_forgot"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="1"
+        android:text="Forgot Password"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/ms_fbtn_sign_up"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="1"
+        android:text="Sign Up"
+        android:textColor="@color/colorJmOrange" />
+
+</RelativeLayout>
